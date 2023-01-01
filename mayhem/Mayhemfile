@@ -1,0 +1,9 @@
+project: parglare
+target: fuzz-grammar-parse
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_grammar_parse.py
+    libfuzzer: true
+    timeout: 12
