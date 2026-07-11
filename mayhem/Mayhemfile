@@ -1,0 +1,8 @@
+project: parglare
+target: fuzz-grammar-parse
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-grammar-parse/testsuite
+cmds:
+  - cmd: /mayhem/fuzz-grammar-parse
+    libfuzzer: true
